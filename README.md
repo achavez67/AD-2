@@ -37,10 +37,10 @@ After installing Active Directory Domain Services, our machine is not quite yet 
 <br />
 
 <p>
-<img src="https://i.imgur.com/B5skk2O.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ck9Iqsb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We will then set DC-1's NIC's private IP address to be static. We can do this by going to our DC-1 virtual machine in Azure->Networking->Click on the Network Interface->IP Configurations->Click on the line where it has the Private IP address(dynamic)->switch assignment from "dynamic" to "static".
+After installing, we will need to logout of our DC-1 machine, and log back in as user "mydomain.com\[username]". We will go to "Active Directory Users and Computers", right click on "mydomain.com" and create two Organizatinal Units. One named "_EMPLOYEES" and the other named "_ADMINS"(putting an "_" before the name and making it all caps makes it easier to distinguish organizational units that were created by the user.
 </p>
 <br />
 
