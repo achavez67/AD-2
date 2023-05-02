@@ -59,3 +59,19 @@ We are going to create an admin account by going to "_ADMINS"->right click->new 
 We will logoff DC-1 VM, and connect back in using the username created for Jane Doe.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/be6Of4Q.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next, we are going to join Client-1 to DC-1's domain. We will go to Azure and find DC-1's private IP address->go to Cllient-1->Networking->*click* network interface->DNS Servers->Custom->*paste* DC-1's private IP address->save.
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/35oYUlC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We will logoff DC-1 VM, and connect back in using the username created for Jane Doe.
+</p>
+<br />
