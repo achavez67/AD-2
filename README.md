@@ -40,14 +40,22 @@ After installing Active Directory Domain Services, our machine is not quite yet 
 <img src="https://i.imgur.com/ck9Iqsb.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After installing, we will need to logout of our DC-1 machine, and log back in as user "mydomain.com\[username]". We will go to "Active Directory Users and Computers", right click on "mydomain.com" and create two Organizatinal Units. One named "_EMPLOYEES" and the other named "_ADMINS"(putting an "_" before the name and making it all caps makes it easier to distinguish organizational units that were created by the user.
+After installing, we will need to logout of our DC-1 machine, and log back in as user "mydomain.com\[username]". We will go to "Active Directory Users and Computers", right click on "mydomain.com" and create two Organizatinal Units. One named "_EMPLOYEES" and the other named "_ADMINS"(putting an "_" before the name and making it all caps makes it easier to distinguish organizational units that were created by the user)
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/QKGv7oZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JdHNbkA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, we will remote connect to both DC-1 and Client-1 virtual machines. We are going to ensure connectivity between the two machines using the "ping" command in the command line. We will get DC-1's private IP address from Azure, and type "ping -t [DC-1's private IP address] on Client-1's command line. We should get a perpetual response "requeset timed out". We will go to DC-1's machine and enable ICMPv4 on the local Widnows firewall. We can do this by going to Windows Defender Firewall with Advanced Security->Inbound Rules->*Enable* both rules that are named "Core Networking Diagnostics - ICMP Echo Request (ICMPv4-in)". We will go back to Client-1's machine to check the connectivity in the command line, and it should look like the image above.
+We are going to create an admin account by going to "_ADMINS"->right click->new user. For the purposes of this project, we are going to use the name "Jane Doe"and we will create a username and password. Under the "_ADMINS" folder, we will right click in "Jane Doe"->properties->member of->add->*type* "domain admins"->apply->ok
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/35oYUlC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We will logoff DC-1 VM, and connect back in using the username created for Jane Doe.
 </p>
 <br />
