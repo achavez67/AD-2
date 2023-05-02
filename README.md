@@ -75,3 +75,11 @@ Next, we are going to join Client-1 to DC-1's domain. We will go to Azure and fi
 From Azure, we are going to restart Client-1 and log back in. Go to settings->system->about->rename this PC(advance)->change->*click* domain and write "mydomain.com" enter Jane Doe's username and password for permission to join domain. Then, the machine will need to restart.
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/pJwkEdR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+We will login to Client-1 as mydomain.com\jane_admin. We will allow "domain users" access to remote desktop.
+</p>
+<br />
