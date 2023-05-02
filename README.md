@@ -69,9 +69,9 @@ Next, we are going to join Client-1 to DC-1's domain. We will go to Azure and fi
 <br />
 
 <p>
-<img src="https://i.imgur.com/35oYUlC.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/pJwkEdR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We will logoff DC-1 VM, and connect back in using the username created for Jane Doe.
+From Azure, we are going to restart Client-1 and log back in. Go to settings->system->about->rename this PC(advance)->change->*click* domain and write "mydomain.com" enter Jane Doe's username and password for permission to join domain. Then, the machine will need to restart.
 </p>
 <br />
