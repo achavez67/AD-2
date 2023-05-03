@@ -77,9 +77,9 @@ From Azure, we are going to restart Client-1 and log back in. Go to settings->sy
 <br />
 
 <p>
-<img src="https://i.imgur.com/pJwkEdR.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JtZGV73.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-We will login to Client-1 as mydomain.com\jane_admin. We will allow "domain users" access to remote desktop.
+We will login to Client-1 as mydomain.com\jane_admin. We will allow "domain users" access to remote desktop. We can achieve this by going to settings->system->remote desktop->select users that can remotely access this PC->add "domain users".->ok
 </p>
 <br />
